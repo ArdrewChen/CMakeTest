@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(SORTTEST)
+aux_source_directory(./ SRC)
+include_directories(${HEAD_PATH})
+link_directories(${LIB_PATH})
+link_libraries(${SORT_LIB})
+set(EXECUTABLE_OUTPUT_PATH ${BIN_PATH})
+add_executable(${EXE_NAME_2} ${SRC})
